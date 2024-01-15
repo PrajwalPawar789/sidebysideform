@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>The Ultimate Guide to VMware Migration and Modernization on Azure</title>
+    <meta name="description" content="The Ultimate Guide to VMware Migration and Modernization on Azure" />
+    <meta name="keywords" content="The Ultimate Guide to VMware Migration and Modernization on Azure" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="preconnect" href="//styles.assets-landingi.com" />
+    <link rel="preconnect" href="//old.assets-landingi.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//images.assets-landingi.com" />
+    <link rel="preconnect" href="//cdn.lugc.link" />
+    <script fetchpriority="high">
+        (function (src, cb) {
+            var s = document.createElement('script'); s.setAttribute('src', src); s.setAttribute('fetchpriority', 'high');
+            s.onload = cb; (document.head || document.body).appendChild(s);
+        })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function () {
+            window.Blinkloader.optimize({
+                fadeIn: false,
+                lazyload: true,
+                smartCompression: true,
+                responsive: true,
+                retina: true,
+                webp: true,
+                pubkey: 'ca6af56c901b93c58ffa',
+                cdnBase: 'https://cdn.lugc.link'
+            });
+
+            if (window.location !== window.parent.location) {
+                window.onload = function () {
+                    setTimeout(function () {
+                        window.dispatchEvent(new CustomEvent('scroll'))
+                    }, 500);
+                };
+            }
+        })
+        <!--Page Title-->
+    </script>
+    <meta property="og:title" content="The Ultimate Guide to VMware Migration and Modernization on Azure" />
+    <meta property="og:description" content="The Ultimate Guide to VMware Migration and Modernization on Azure" />
+    <meta property="og:image" content="" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext&display=swap"
+        type="text/css" rel="preload" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic,cyrillic-ext&display=swap"
+        type="text/css" rel="preload" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://styles.assets-landingi.com/assets/css/2.14-landend-base.css" type="text/css" rel="preload"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://styles.assets-landingi.com/KqjXNRzk/base.css" type="text/css" rel="stylesheet">
+    <script>
+        var landingiInternalDetails = {
+            'landing_id': '1566466',
+            'landing_hash': '5aa9b7f266d6feda7533',
+            'landing_variant_hash': '',
+            'landing_name': 'Microsoft+%3A+France%3A+French+%3AThe+Ultimate+Guide+to+VMware+Migration+and+Modernization+on+Azure',
+            'landing_lang': 'en',
+            'account_uuid': 'b065abe0-6e03-11ea-bff9-42b3a1540b74',
+            'apikey': '6e314dd3-fc1a-43a0-9b55-02b4a96c50b6'
+        }
+    </script>
+    <script>
+
+        document.documentElement.lang = "en";
+
+
+        function hotFix() {
+            for (var i = 0; i <= 5; i++) {
+                document.getElementsByTagName("select")[i].removeAttribute("aria-label");
+                document.getElementsByTagName("select")[i].setAttribute("aria-label", "New Label");
+            }
+        }
+        hotFix();
+
+
+
+
+    </script>
+    <script>
+        (async function (w, d) {
+            try {
+                const response = await w.fetch(
+                    'https://' + 'tagmanager.landingi.io' + '/account/' + 'b065abe0-6e03-11ea-bff9-42b3a1540b74'
+                );
+                const gtm = await response.json();
+
+                if (gtm) {
+                    const script = d.head.getElementsByTagName('script')[0];
+                    const tmpl = d.createElement('template');
+                    tmpl.innerHTML = gtm;
+                    tmpl.content.childNodes.forEach((node) => {
+                        let elem = node;
+
+                        if ('SCRIPT' === node.nodeName) {
+                            elem = d.createElement('script');
+
+                            if (node.textContent) {
+                                elem.textContent = node.textContent;
+                            }
+
+                            if (node.src) {
+                                elem.src = node.src;
+                                elem.type = node.type;
+                            }
+
+                            script.parentNode.insertBefore(elem, script);
+                        }
+
+                        if ('STYLE' === node.nodeName) {
+                            elem = d.createElement('style');
+
+                            if (node.textContent) {
+                                elem.textContent = node.textContent;
+                            }
+
+                            script.parentNode.insertBefore(elem, script);
+                        }
+                    })
+                }
+            } catch (err) {
+                console.log(err);
+            }
+        })(window, document);
+    </script>
+    <script>
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.init = false;
+    </script>
+    <script type="text/javascript" src="//assetslp.link/assets/js/landend/lazysizes.min.js"></script>
+    <script>
+        lazySizes.init();
+    </script>
+    <script defer fetchpriority="low"
+        src="https://popups.landingi.com/api/v3/landing/install-code?apikey=6e314dd3-fc1a-43a0-9b55-02b4a96c50b6&landing=5aa9b7f266d6feda7533"></script>
+    <script defer fetchpriority="low"
+        src="https://scripts.assets-landingi.com/lightboxes/lightbox-render.js?v=1698248934"></script>
+    <script>
+        window.addEventListener('load', function () {
+            LightboxRender.init({
+                useAaf: true
+            })
+        });
+    </script>
+    <style>
+        .space {
+          margin-right: 10px;
+        }
+      </style>
+</head>
+
+<body id="TxvpQxGuo6CkxW3pseVeXnPkXz3TAWhR">
+    <!--Logo and HyperLink-->
+    <div id="fwG8O6R5wFuI4GIMqEzXMxnoiEH1Tctn" class="widget widget-section ">
+        <div class="row">
+
+            <div class="container ">
+
+                <a href="https://www.microsoft.com/" id="c8NKQeANOfIXIXqr1Es56m6hLbsa4CxW" class="widget widget-image"
+                    aria-label="Image" target="_self">
+
+                    <img data-blink-uuid="36a67abb-5457-4509-8403-1d919f4b2875"
+                        data-blink-src="https://cdn.lugc.link/36a67abb-5457-4509-8403-1d919f4b2875/-/preview/"
+                        data-blink-stretch="off" data-blink-quality="normal" title="https://www.microsoft.com/"
+                        alt="https://www.microsoft.com/" width="185" height="60">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div id="RLMCuzUXrTKXP9kFtzcsnEgnxlMd9Ggv" class="widget widget-section ">
+        <div class="row">
+
+            <div class="container ">
+
+                <div id="t2cKP1llaRPT3dpQJbLdl0H70va3I0G6" class="widget widget-text">
+                    <h1><font color="#ffffff"><%= pageTitle %></font></h1>
+                </div>
+                
+                <div id="Tfry2Psi7WuxD2O5duVy1D5plNmpSQ7n" class="widget widget-box"></div>
+                <div id="ugr7RDBZSb2FIggJmlmTZqeWLFukXEAc" class="widget widget-text">
+                    <p><b><%= formHeading1 %></b></p>
+                </div>
+                <div id="ZiHBGHiiRq9BQIbkZOGkBzlN1QrKBO4t" class="widget widget-text">
+                    <p><%= formHeading2 %></p>
+                </div>
+
+                <!-- form.ejs -->
+
+<form id="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" class="widget widget-form" data-orientation="vertical"
+data-version="2.1" action="/The-Ultimate-Guide-to-VMware-Migration-and-Modernization-on-Azure-France-French/submit/5aa9b7f266d6feda7533"
+enctype="multipart/form-data" method="post" novalidate data-hash="5aa9b7f266d6feda7533">
+
+<!-- First Name -->
+<div  style="display: inline;
+display: flex;" id="TH0KTbpZiMpohiFHTiAfVyNvoBgzcT9V" class="widget widget-container clearfix">
+    
+    <input class="widget widget-input-text" id="U0vahsbxsRZQ22Xp0dLK7TXiskGzMeE8" type="text"
+        subtype="name" placeholder="First Name" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="name" value="">
+
+<!-- Last Name -->
+    
+<span class="space"></span><input class="widget widget-input-text" id="e4aNOo1CAVmXmyRNQEzXnRuaTlJBnHHQ" type="text"
+        subtype="name" placeholder="Last Name" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="name1" value="">
+</div>
+
+<!-- Business Email -->
+<div style="display: inline;
+display: flex;" id="hThEhoffWGlq51ph5lv8GAAuadCd5O6r" class="widget widget-container clearfix">
+    
+    <input class="widget widget-input-text" id="unNdStcmbi8PBxHuSi9uvH1yyNir1Z4T" type="email"
+        subtype="email" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" placeholder="Business Email" name="email" value="">
+
+<!-- Company -->
+<span class="space"></span><input class="widget widget-input-text" id="O9580rfiymvpPCrVSXyTWazxrHhTkCmi" type="text"
+        subtype="company" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" placeholder="Company" name="company" value="">
+</div>
+
+<!-- Company Size -->
+<div style="display: inline;
+display: flex;" id="tQl790COc4AP1yE8wsOCfTV2JDCvnKSV" class="widget widget-container clearfix">
+    
+    <select class="widget-select widget widget-input-select" id="qtLsVyBJUmUXUfITEJp3s53ocosvhVUc"
+        placeholder="<%= field5 %>" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="select1">
+        <option value selected disabled hidden>Company Size</option>
+        <option value="10,000+">10,000+</option>
+        <option value="1,000-9,999">1,000-9,999</option>
+        <!-- Add other options as needed -->
+    </select>
+
+<!-- Job Title -->
+
+<span class="space"></span><select class="widget-select widget widget-input-select" id="nPRNiLzLCistJz0exh5eB4W5z7w4y6dQ"
+        placeholder="<%= field6 %>" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="select2">
+        <option value selected disabled hidden>Job Title</option>
+        <option value="Propriétaire">Propriétaire</option>
+        <option value="Directeur général">Directeur général</option>
+        <!-- Add other options as needed -->
+    </select>
+</div>
+
+<!-- Department -->
+<div style="display: inline;
+display: flex;" id="XyCpfb8I6nugmJUX3v7e9BIgskqVWbRP" class="widget widget-container clearfix">
+
+    <select class="widget-select widget widget-input-select" id="ZRSkBMPukAeu47AlfEfoDNkyo1awObmi"
+        placeholder="<%= field7 %>" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="select3">
+        <option value selected disabled hidden>Département</option>
+        <option value="Directeur général">Directeur général</option>
+        <option value="Développeur">Développeur</option>
+        <!-- Add other options as needed -->
+    </select>
+
+
+<!-- Phone -->
+
+<span class="space"></span><input class="widget widget-input-text" id="lrmCzQSBP0bZZxz2UlFmgwlCwCJLmshN" type="tel" subtype="phone"
+        placeholder="Phone" parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="phone" value="">
+</div>
+
+<!-- Country -->
+<div id="TgZ12OZAOpCa6Mcd66wVeMJILkMTa8T4" class="widget widget-container clearfix">
+    <label id="PJHmCg5qd85xpPP0Agix1AHJN46uOG5Z"
+        class="widget widget-text widget-regular-label widget-label"
+        for="qwRtSGTU0syGZCgNthQxLfFpRdxAFCSR">Country</label>
+    <!-- Add your country input/select field here -->
+</div>
+
+<!-- Consent Checkbox -->
+<div id="nVBTL2fNSm7eIT9uR3Z4GkiDu6q4afnF" class="widget widget-container clearfix">
+    <input class="widget widget-input-checkbox" type="checkbox" id="hoVWmABClZF01HI36vBNUVxFTFDLlcdG"
+        parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH" name="checkbox">
+    <label id="KqLEA3Gb16KxzQR7kH8DqTLG6dJeT7xJ"
+        class="widget widget-text widget-checkbox-label widget-label"
+        for="hoVWmABClZF01HI36vBNUVxFTFDLlcdG">
+        <p><a
+                href="https://go.microsoft.com/fwlink/?LinkId=521839">Déclaration de confidentialité.</a></p>
+    </label>
+</div>
+
+<!-- Submit Button -->
+<div id="sf314K3uIb6vNILT3dlCVl7tSAVSS19w"
+    class="widget widget-container input-button-container clearfix">
+    <button class="widget widget-input-button" type="submit" id="kOMh0kdf3OTVxfD16PLFIOoSugS8G9Wd"
+        parentId="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH">
+        <div class="widget-overlay"></div><%= buttontext %>
+    </button>
+</div>
+
+<!-- Hidden Fields -->
+<input type="hidden" name="_name_" value="">
+<input type="hidden" name="_lead_uuid" value="">
+<input type="hidden" name="_uid" value="aCEMmRzw1fxla01SXbTvHMZsGEfblhOH">
+<input type="hidden" name="_redirect" value="">
+</form>
+
+                
+            </div>
+        </div>
+    </div>
+    <div id="ke1cv2JwFmEPyLBDq7MbCkpi57AOump8" class="widget widget-section lazyload">
+        <div class="row">
+
+            <div class="container lazyload">
+
+                <div id="R1F05nCHNPmXlnUNMXiUTmO9hNipp0Sa" class="widget widget-text">
+                    <p>Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                        Regardless of which option you choose, you’ll immediately gain the enhanced security, improved resiliency, and scalability of Azure.
+
+                    </p>
+                    <ul>
+                        <li>Lift-and-shift migration using Azure VMWare Solution, which allows you to quickly move
+                            workloads and keep using familiar VMware tools.</li>
+                        <li>Direct deployment from VMware on to Azure infrastructure as a service (IaaS).</li>
+                        <li>A combination of direct and lift-and-shift migration, which enables you to securely move
+                            workloads between environments with built-in security features like identity and access
+                            management.</li>
+                    </ul>
+                    <p>Regardless of which option you choose, you’ll immediately gain the enhanced security, improved
+                        resiliency, and scalability of Azure.</p>
+                </div>
+                <div id="o31yuwDS9JAqRcLZk5inExgpoUA6W1su" class="widget widget-text">
+                  
+                </div>
+                <div id="L3Lxv2hvHO2hv6DWT4GMNcTWNiOUT8bF" class="widget widget-text">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//assetslp.link/assets/js/landend/jquery-3-6-0.min.js"
+        fetchpriority="high"></script>
+    <script async type="text/javascript"
+        src="https://old.assets-landingi.com/bootstrap/js/landend.bootstrap.min.js"></script>
+    <script async type="text/javascript" src="https://scripts.assets-landingi.com/webview/webview.1.0.2.js"></script>
+    <script type="text/javascript"
+        src="https://old.assets-landingi.com/assets/js/dist/landend/300123/landend.js"></script>
+    <script src="/assets/js/landend/frodo.js"></script>
+    <script>
+        const lpStatsModule = (function () {
+            const url = "https://stats.landingi.com/visit/1566466";
+            const data = { "lid": 1566466, "luuid": "63d13094-5162-4703-a456-905eae26486d", "lhash": "5aa9b7f266d6feda7533", "fid": 1566466, "auuid": "b065abe0-6e03-11ea-bff9-42b3a1540b74", "acid": 199539, "agid": null, "tid": null, "hasAccessToEventTracker": false, "hasAccessToEventTrackerDev": false };
+            const cookieName = "ls_sid_1566466";
+
+            if (data.hasAccessToEventTrackerDev) {
+                console.log('Running runScript in dev mode')
+                frodo.runScriptDev(cookieName, url, data)
+            } else {
+                frodo.runScript(cookieName, url, data)
+            }
+
+            return {
+                getData: function () { return data; },
+                cookieName: function () { return cookieName; },
+                endpoint: function () { return url; },
+                path: function () { return path; }
+            };
+        })();
+    </script>
+    <script defer type="text/javascript" src="https://scripts.assets-landingi.com/landend/160721/files.js"></script>
+    <script defer fetchpriority="low" type="text/javascript"
+        src="https://old.assets-landingi.com/assets/js/vendor/jquery-form/jquery.form.min.js"></script>
+    <script type="text/javascript" src="https://scripts.assets-landingi.com/landend/250423/landend.min.js"></script>
+    <script defer fetchpriority="low" type="text/javascript"
+        src="https://old.assets-landingi.com/assets/js/landend/260820/validation.js"></script>
+    <script> 
+        document.documentElement.lang = "en";
+        function hotFix() {
+            for (var i = 0; i <= 20; i++) {
+                document.getElementsByTagName("select")[i].removeAttribute("aria-label");
+                document.getElementsByTagName("select")[i].setAttribute("aria-label", "New Label");
+
+            }
+        }
+        hotFix();
+    </script>
+    <script>
+        var selectElement = document.querySelector('select[placeholder="De campagne"]');
+        // Remove all existing options from the select element
+        selectElement.innerHTML = '';
+        // Create a placeholder option
+        var placeholderOption = document.createElement('option');
+        placeholderOption.value = '';
+        placeholderOption.text = "De campagne"; // Replace with your desired placeholder text
+        // Append the placeholder option to the select element
+        selectElement.appendChild(placeholderOption);
+        var countries = [
+
+        ];
+        // Populate the select element with options
+        for (var i = 0; i < countries.length; i++) {
+            var option = document.createElement('option');
+            option.value = countries[i].value;
+            option.text = countries[i].text;
+            selectElement.appendChild(option);
+        }
+        selectElement.options[0].style.display = 'none';
+    </script>
+    <script> 
+        document.documentElement.lang = "en";
+        function hotFix() {
+            for (var i = 0; i <= 20; i++) {
+                document.getElementsByTagName("select")[i].removeAttribute("aria-label");
+                document.getElementsByTagName("select")[i].setAttribute("aria-label", "New Label");
+
+            }
+        }
+        hotFix();
+    </script>
+</body>
+
+</html>
